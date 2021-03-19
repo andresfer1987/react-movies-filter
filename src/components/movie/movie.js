@@ -16,7 +16,9 @@ const Movie = (props) => {
 }
 
 Movie.propTypes = {
-
+    name: PropTypes.string,
+    image: PropTypes.string,
+    status: PropTypes.string
 }
 
 export default Movie

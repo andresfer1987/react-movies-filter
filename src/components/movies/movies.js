@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
+import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types'
 import './movies.css';
 import Movie from '../movie';
 
-const Movies = ({movies}) => {
-
+const Movies = () => {
+    const movies = useSelector(state => state.movies)?.movies;
     return (
         <div className="movies__container">
             <ul className="movies__list">
@@ -18,8 +19,5 @@ const Movies = ({movies}) => {
     )
 }
 
-Movies.propTypes = {
-
-}
 
 export default Movies
