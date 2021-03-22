@@ -4,7 +4,7 @@ import './movies.css';
 import Movie from '../movie';
 
 const Movies = () => {
-    const movies = useSelector(state => state.movies)?.movies;
+    const movies = useSelector(state => state.movies)?.movies ;
     return (
         <div className="movies__container">
             <ul className="movies__list">

@@ -18,7 +18,7 @@ const App= () => {
 
   return (
     <>
-    <Header title="MOVIES FILTER"/>
+    <Header/>
     <Search />
     <Loader />
     <Movies />   

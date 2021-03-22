@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Header = ({title}) => {
+const Header = () => {
     return (
         <header className="header">
-      <div className="header__title"><span>{title}</span></div>
+      <div className="header__title"><span>MOVIES FILTER</span></div>
     </header>
     )
 }
