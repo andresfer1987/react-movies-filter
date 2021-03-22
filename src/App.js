@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import './App.css';
 import  Movies  from './components/movies';
 import Search from './components/search';
@@ -13,7 +13,7 @@ const App= () => {
  
   useEffect(() => {
     dispatch(moviesActions.fetchData());
-  
+   // eslint-disable-next-line
   },[])  
 
   return (

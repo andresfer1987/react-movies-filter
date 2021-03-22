@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux';
-import PropTypes from 'prop-types'
 import './movies.css';
 import Movie from '../movie';
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const Header = ({title}) => {
     return (
@@ -7,10 +6,6 @@ const Header = ({title}) => {
       <div className="header__title"><span>{title}</span></div>
     </header>
     )
-}
-
-Header.propTypes = {
-
 }
 
 export default Header

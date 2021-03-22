@@ -1,6 +1,5 @@
 import React from 'react'
 import { useDispatch } from  'react-redux';
-import PropTypes from 'prop-types'
 import './search.css';
 import { moviesActions } from '../../actions/moviesActions';
 
@@ -12,7 +11,7 @@ const Search = () => {
       if(e.target.value.length > 0){
         dispatch({type:'FILTER_DATA', payload: e.target.value});
       }
-      else if(e.target.value.length == 0) {
+      else if(e.target.value.length === 0) {
         dispatch(moviesActions.fetchData());
       }     
     }

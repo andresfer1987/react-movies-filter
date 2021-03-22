@@ -19,7 +19,6 @@ export const moviesReducer = (state = initialState, action) => {
               ...state,loading:false, errorMessage:action.error
             };
         case 'FILTER_DATA':
-          debugger;
           return {
             ...state, movies: state.movies.filter(x => x.name.toUpperCase().includes(action.payload.toUpperCase()))
           };
